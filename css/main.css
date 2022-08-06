@@ -72,8 +72,22 @@
 
 .header-main > h1, h2, h3 {
     color: var(--secondary);
+    text-align: center;
 }
 
 .header-main > h1 {
-    font-size: 25px;
+    font-size: 3.25rem;
+    max-width: 645px;
+}
+
+.header-main > h2 {
+    font-size: 1.625rem;
+    margin: 1rem auto;
+    font-weight: 400;
+}
+
+.header-main > h3 {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    font-weight: 400;
 }
