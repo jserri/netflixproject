@@ -104,6 +104,14 @@
     margin-right: 2rem;
 }
 
+.nav-section > .nav-right > .button-login > button {
+    background: red;
+    border: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+    color: var(--secondary);
+}
+
 .header-main {
     justify-content: center;
     align-items: center;
