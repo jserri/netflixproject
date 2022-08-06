@@ -4,9 +4,76 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #f3f3f3;
-    color: #333;
     direction: ltr;
-    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
+}
+
+:root {
+    --primary: #333;
+    --secondary: #fff;
+}
+
+.container-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav-background {
+    background-color: rgb(169, 169, 169);
+    background-image: url(/img/netflix.jpg);
+    height: 800px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-blend-mode: multiply;
+}
+
+.nav-background > .nav-section {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding-top: 20px;
+}
+
+.nav-section > .nav-left {
+    position: relative;
+    flex: 0 1 50%;
+    margin-left: 5rem;
+}
+
+.nav-section > .nav-left > .logo {
+    position: absolute;
+    fill: #ff1100;
+}
+
+.nav-section > .nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5rem;
+    flex: 0 1 50%;
+}
+
+.nav-section > .nav-right > .language {
+    margin-right: 2rem;
+}
+
+.header-main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-main > h1, h2, h3 {
+    color: var(--secondary);
+}
+
+.header-main > h1 {
+    font-size: 25px;
 }
