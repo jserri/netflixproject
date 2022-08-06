@@ -24,7 +24,7 @@
 .nav-background {
     background-color: rgb(169, 169, 169);
     background-image: url(/img/netflix.jpg);
-    height: 800px;
+    padding-bottom: 100px;
     background-repeat: no-repeat;
     object-fit: cover;
     background-blend-mode: multiply;
