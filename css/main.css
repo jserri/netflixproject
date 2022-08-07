@@ -90,6 +90,7 @@
 .nav-section > .nav-left > .logo {
     position: absolute;
     fill: #ff1100;
+    top: -10px;
 }
 
 .nav-section > .nav-right {
@@ -102,11 +103,20 @@
 
 .nav-section > .nav-right > .language {
     margin-right: 2rem;
+    position: relative;
+}
+
+.nav-section > .nav-right > .language::before {
+    content: url(/img/world-icon.png);
+    font-size: .75rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 
 .nav-section > .nav-right > .language > select {
     padding: 6px;
-    width: 110px;
+    width: 120px;
     background: transparent;
     color: var(--secondary);
     border: 1px solid #fff;
@@ -115,11 +125,14 @@
 
     appearance: none;
 
-    background: url(/img/icon-down.png) 96% / 15% no-repeat transparent;
+    background: url(/img/icon-down.png) 95% / 15% no-repeat transparent;
 }
 
-.nav-section > .nav-right > .language > select::before {
-    
+.nav-section > .nav-right > .language > select::after {
+    content: "\e896";
+    font-size: .75rem;
+    left: .5rem;
+    color: #fff;
 }
 
 .nav-section > .nav-right > .button-login > button {
@@ -182,4 +195,81 @@
     color: var(--secondary);
     cursor: pointer;
     text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-section > .nav-right > .language > select {
+        padding: 4px;
+        width: 110px;
+    }
+
+    .nav-section > .nav-right > .button-login > button {
+        padding: 5px 10px;
+    }
+
+    .nav-section > .nav-left {
+        position: relative;
+        flex: 0 1 50%;
+        margin-left: 0.5rem;
+    }
+        
+    .nav-section > .nav-left > .logo {
+        position: absolute;
+        fill: #ff1100;
+        top: -10px;    
+    }
+        
+    .nav-section > .nav-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 0 1 50%;
+        margin-right: 0.5rem;
+    }
+
+    .header-main {
+        justify-content: flex-start;
+        margin-top: 7rem;
+    }
+
+    .header-main > .title-section > h1 {
+        font-size: 1.90rem;
+        max-width: 640px;
+    }
+
+    .header-main > .title-section > h2 {
+        font-size: 1.125rem;
+        margin: 1rem auto;
+        font-weight: 400;
+        max-width: 640px;
+    }
+
+    .header-main > .form-section {
+        max-width: 400px;
+    }
+
+    .header-main > .form-section > .form-title > h3 {
+        font-size: 18px;
+        max-width: 450px;
+    }
+
+    .header-main > .form-section > .form-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-input > .email-space > input {
+        height: 2.5rem;
+        min-width: 350px;
+    }
+
+    .button-input > button {
+        margin-top: 1rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        min-width: 130px;
+        border-radius: 3px;
+    }
 }
