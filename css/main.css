@@ -133,13 +133,14 @@
     left: .5rem;
     color: #fff;
 }
-
-.nav-section > .nav-right > .button-login > button {
+.button-style-login {
     background: red;
     border: none;
     padding: 7px 17px;
     border-radius: 3px;
     color: var(--secondary);
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .header-main {
@@ -185,7 +186,10 @@
     height: 4rem;
 }
 
-.button-input > button {
+.button-subscribe {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 4rem;
     font-size: 1.625rem;
     min-width: 180px;
@@ -194,6 +198,7 @@
     color: var(--secondary);
     cursor: pointer;
     text-align: center;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {
@@ -202,7 +207,7 @@
         width: 110px;
     }
 
-    .nav-section > .nav-right > .button-login > button {
+    .button-style-login {
         padding: 5px 10px;
     }
 
@@ -264,7 +269,7 @@
         min-width: 350px;
     }
 
-    .button-input > button {
+    .button-subscribe {
         margin-top: 1rem;
         height: 2.5rem;
         font-size: 1rem;
