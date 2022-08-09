@@ -211,20 +211,33 @@ html {
 }
 /* Card Section */
 
-.card-1 {
+/*.card-1 {
     display: flex;
     background: #000;
     max-width: 1100px;
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
+    min-height: 600px;
+}*/
 
+.card-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-height: 450px;
 }
 
 .card-left {
     display: flex;
+    padding: 0 3rem 0 0;
+    height: 100%;
+    width: 52%;
     flex-direction: column;
-    flex: 1;    
+    flex: 0 1 auto;
+    justify-content: center; 
 }
 
 .card-1 > .card-left > h1 {
@@ -235,26 +248,47 @@ html {
 }
 
 .card-1 > .card-left > h2 {
-    font-size: 1.825rem;
+    font-size: 1.625rem;
     font-weight: 400;
     text-align: start;
     margin-top: 1rem;
 }
 
 .card-right {
-    flex: 1;
+    display: flex;
+    flex: 0 1 auto;
+    height: 100%;
+    width: 48%;
 }
 
-.card-right > .image-section > img {
-    border: 0;
-    height: auto;
-    max-width: 100%;
-    z-index: 2;
+.story-card-animation {
+    overflow: hidden;
     position: relative;
 }
 
-.card-right > .image-section > .video-section {
+.story-card-animation > img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.video-animation {
+    height: 100%;
+    left: 50%;
+    max-height: 55%;
+    max-width: 73%;
     position: absolute;
+    top: 46%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.video1 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 
@@ -265,6 +299,11 @@ html {
 /* Media Query */
 
 @media screen and (max-width: 600px) {
+
+    .nav-background {
+        padding-bottom: 0px;
+    }
+
     .nav-section > .nav-right > .language > select {
         padding: 4px;
         width: 110px;
@@ -277,7 +316,7 @@ html {
     .nav-section > .nav-left {
         position: relative;
         flex: 0 1 50%;
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
         
     .nav-section > .nav-left > .logo {
@@ -291,11 +330,11 @@ html {
         justify-content: flex-end;
         align-items: center;
         flex: 0 1 50%;
-        margin-right: 1rem;
+        margin-right: 3rem;
     }
 
     .header-main {
-        justify-content: flex-start;
+        justify-content: unset;
         margin-top: 7rem;
     }
 
@@ -338,5 +377,41 @@ html {
         font-size: 1rem;
         min-width: 130px;
         border-radius: 3px;
+    }
+
+    /* Card Media Query */
+    
+    .card-1 {
+        flex-direction: column;
+     
+    }
+
+    .card-left {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .card-1 > .card-left > h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: .5rem;
+    }
+
+    .card-1 > .card-left > h2 {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: .75rem 0 .25rem;
+    }
+
+    .card-right {
+        width: 100%;
+      
+      
+    }
+
+    .card-right > .story-card-animation {
+        
     }
 }
