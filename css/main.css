@@ -240,18 +240,36 @@ html {
     justify-content: center; 
 }
 
-.card-1 > .card-left > h1 {
+#wrapper-first > h1 {
     color: #fff;
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: .5rem;   
 }
 
-.card-1 > .card-left > h2 {
+#wrapper-first > h2 {
     font-size: 1.625rem;
     font-weight: 400;
     text-align: start;
     margin-top: 1rem;
+}
+
+#wrapper-second > h1 {
+    color: #fff;
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;   
+}
+
+#wrapper-second > h2 {
+    font-size: 1.625rem;
+    font-weight: 400;
+    text-align: start;
+    margin-top: 1rem;
+}
+
+#wrapper-second {
+    margin-left: 2rem;
 }
 
 .card-right {
@@ -291,6 +309,68 @@ html {
     vertical-align: baseline;
 }
 
+.story-card-animation2 {
+    display: flex;
+    position: relative;
+}
+
+
+.story-card-animation2 > img {
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    z-index: 1;
+}
+
+.story-footer {
+    display: flex;
+    position: absolute;
+    width: 350px;
+    height: 90px;
+    background-color: #000;
+    border-radius: 10px;
+    border: 2px solid #333;
+    z-index: 1111;
+    bottom: 25px;
+    left: 95px;
+  }
+
+  .img-story-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .img-story-footer > img {
+    width: 56px;
+    height: 72px;
+  }
+
+  .text-story-footer {
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .text-story-footer > .title-story-box {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .text-story-footer > .title-download-box {
+    font-size: 14px;
+    color: #0071EB;
+    text-align: start;
+  }
+
+  .download-story-footer {
+    flex: 1;
+    background: url(/img/download-icon.gif) no-repeat 50%;
+    background-size: 50%;
+  }
 
 
 
@@ -392,13 +472,26 @@ html {
         padding: 0;
     }
 
-    .card-1 > .card-left > h1 {
+    #wrapper-first > h1 {
         font-size: 2.5rem;
         line-height: 1.1;
         margin-bottom: .5rem;
     }
 
-    .card-1 > .card-left > h2 {
+    #wrapper-first > h2 {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: .75rem 0 .25rem;
+    }
+
+    #wrapper-second > h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: .5rem;
+    }
+
+    #wrapper-second > h2 {
         text-align: center;
         font-size: 1.25rem;
         font-weight: 400;
@@ -406,12 +499,6 @@ html {
     }
 
     .card-right {
-        width: 100%;
-      
-      
-    }
-
-    .card-right > .story-card-animation {
-        
+        width: 100%;      
     }
 }
