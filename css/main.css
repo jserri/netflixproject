@@ -135,7 +135,7 @@ html {
     content: "\e896";
     font-size: .75rem;
     left: .5rem;
-    color: #fff;
+    color: var(--secondary);
 }
 .button-style-login {
     background: red;
@@ -240,7 +240,7 @@ html {
 }
 
 #wrapper-first > h1 {
-    color: #fff;
+    color: var(--secondary);
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: .5rem;   
@@ -254,7 +254,7 @@ html {
 }
 
 #wrapper-second > h1 {
-    color: #fff;
+    color: var(--secondary);
     font-size: 3.125rem;
     line-height: 1.1;
     margin-bottom: .5rem;   
@@ -379,7 +379,7 @@ html {
 
   .text-story-footer > .title-story-box {
     font-size: 15px;
-    color: #fff;
+    color: var(--secondary);
   }
 
   .text-story-footer > .title-download-box {
@@ -394,6 +394,62 @@ html {
     background-size: 50%;
   }
 
+  /* Faq Section */
+
+  .wrapper-faq {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  .container-faq > .wrapper-faq > h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--secondary);
+    margin-top: 5rem;
+  }
+
+  .wrapper-list-faq {
+    max-width: 65%;
+    margin: 0 auto;
+  }
+
+  .faq-list {
+    margin-top: 3rem;
+  }
+
+  .faq-list-item {
+    list-style-type: none;
+    font-size: 1.6rem;
+  }
+
+  .faq-button {
+    border: 0;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    padding: 1em 2.2em 1em 1.2em;
+    position: relative;
+    width: 100%;
+
+    background: #303030;
+    display: block;
+    text-align: left;
+
+    text-transform: none;
+    -webkit-appearance: button;
+    cursor: pointer;
+
+    color: var(--secondary);
+    font-size: 1.5rem;
+  }
+
+  .svg-faq-icon {
+    fill: var(--secondary);
+    height: 2em;
+    position: absolute;
+    right: 2em;
+    top: 35%;
+    width: 2em;
+  }
 
 
 
