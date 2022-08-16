@@ -355,74 +355,74 @@ html {
     z-index: 1111;
     bottom: 25px;
     left: 95px;
-  }
+}
 
-  .img-story-footer {
+.img-story-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 1;
-  }
+}
 
-  .img-story-footer > img {
+.img-story-footer > img {
     width: 56px;
     height: 72px;
-  }
+}
 
-  .text-story-footer {
+.text-story-footer {
     align-items: flex-start;
     justify-content: center;
     display: flex;
     flex-direction: column;
     flex: 1;
-  }
+}
 
-  .text-story-footer > .title-story-box {
+.text-story-footer > .title-story-box {
     font-size: 15px;
     color: var(--secondary);
-  }
+}
 
-  .text-story-footer > .title-download-box {
+.text-story-footer > .title-download-box {
     font-size: 14px;
     color: #0071EB;
     text-align: start;
-  }
+}
 
-  .download-story-footer {
+.download-story-footer {
     flex: 1;
     background: url(/img/download-icon.gif) no-repeat 50%;
     background-size: 50%;
-  }
+}
 
   /* Faq Section */
 
-  .wrapper-faq {
+.wrapper-faq {
     margin: 0 auto;
     max-width: 80%;
-  }
+}
 
-  .container-faq > .wrapper-faq > h1 {
+.container-faq > .wrapper-faq > h1 {
     font-size: 3rem;
     text-align: center;
     color: var(--secondary);
     margin-top: 5rem;
-  }
+}
 
-  .wrapper-list-faq {
+.wrapper-list-faq {
     max-width: 65%;
     margin: 0 auto;
-  }
+}
 
-  .faq-list {
+.faq-list {
     margin-top: 3rem;
-  }
+}
 
-  .faq-list-item {
+.faq-list-item {
     list-style-type: none;
     font-size: 1.6rem;
-  }
+}
 
-  .faq-button {
+.faq-button {
     border: 0;
     font-weight: 400;
     margin-bottom: .5rem;
@@ -440,16 +440,37 @@ html {
 
     color: var(--secondary);
     font-size: 1.5rem;
-  }
+}
 
-  .svg-faq-icon {
+.svg-faq-icon {
     fill: var(--secondary);
     height: 2em;
     position: absolute;
     right: 2em;
     top: 35%;
     width: 2em;
-  }
+}
+
+.wrapper-form-faq {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-form-faq > .form-section > .form-title {
+    margin-top: 3rem;
+}
+
+.wrapper-form-faq > .form-section > .form-title > h3 {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.wrapper-form-faq > .form-section > .form-input {
+    margin-bottom: 5rem;
+}
+
 
 
 
