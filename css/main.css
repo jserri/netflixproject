@@ -137,6 +137,7 @@ html {
     left: .5rem;
     color: var(--secondary);
 }
+
 .button-style-login {
     background: red;
     border: none;
@@ -488,11 +489,72 @@ footer > .wrapper-footer > .telephone > p, a {
     font-size: 1em;
 }
 
-.footer > .wrapper-footer > .footer-grid {
+footer > .wrapper-footer > .telephone > p > a:hover {
+    text-decoration: underline;
+} 
+
+footer > .wrapper-footer > .footer-grid {
     display: flex;
+    margin: 3rem 0;
 }
 
+footer > .wrapper-footer > .footer-grid > .first-grid, .second-grid, .third-grid, .fourth-grid {
+    flex: 1;
+}
 
+footer > .wrapper-footer > .footer-grid > * > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer > .wrapper-footer > .footer-grid > * > ul > li {
+    margin-bottom: .8rem;
+}
+
+footer > .wrapper-footer > .footer-grid > * > ul > li > a {
+    color: #737373;
+    font-size: 13px;
+}
+
+footer > .wrapper-footer > .footer-grid > * > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-footer > .wrapper-footer-lang > .language {
+    margin-right: 2rem;
+    position: relative;
+}
+
+.wrapper-footer > .wrapper-footer-lang > .language::before {
+    content: url(/img/world-icon15.png);
+    filter: invert(60%);
+    font-size: .75rem;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.wrapper-footer > .wrapper-footer-lang > .language > select {
+    padding: 15px;
+    width: 140px;
+    background: transparent;
+    color: #737373;
+    border: 1px solid #333;
+    border-radius: 3px;
+    text-align: center;
+
+    appearance: none;
+
+    background: url(/img/icon-down.png) 95% / 15% no-repeat transparent;
+    filter: invert(60%);
+}
+
+.wrapper-footer > p {
+    margin: 2rem 0;
+    color: #737373;
+    font-size: 13px;
+}
 
 
 
