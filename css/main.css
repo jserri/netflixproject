@@ -279,6 +279,13 @@ html {
     width: 48%;
 }
 
+.card-right-2 {
+    display: flex;
+    flex: 0 1 auto;
+    height: 100%;
+    width: 48%;
+}
+
 .card-right-4 {
     display: flex;
     flex: 0 1 auto;
@@ -554,14 +561,235 @@ footer > .wrapper-footer > .footer-grid > * > ul > li > a:hover {
     color: #737373;
     font-size: 13px;
 }
+/* Media Query Tablet */
 
+/* Nav - Header Section */
 
+@media screen and (max-width: 950px) {
+    .nav-background {
+        padding-bottom: 0px;
+    }
 
-/* Media Query */
+    .nav-section > .nav-right > .language > select {
+        padding: 4px;
+        width: 110px;
+    }
 
-@media screen and (max-width: 600px) {
+    .button-style-login {
+        padding: 5px 10px;
+    }
 
+    .nav-section > .nav-left {
+        position: relative;
+        flex: 0 1 50%;
+        margin-left: 3rem;
+    }
+        
+    .nav-section > .nav-left > .logo {
+        position: absolute;
+        fill: #ff1100;
+        top: -10px;    
+    }
+        
+    .nav-section > .nav-right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex: 0 1 50%;
+        margin-right: 1.5rem;
+    }
+
+    .nav-section > .nav-right > .language {
+        margin-right: 1rem;
+    }
+
+    .header-main {
+        justify-content: unset;
+        margin-top: 7rem;
+    }
+
+    .header-main > .title-section > h1 {
+        font-size: 3rem;
+        max-width: 640px;
+        line-height: 1.2;
+    }
+
+    .header-main > .title-section > h2 {
+        font-size: 1.8;
+        margin: 1rem auto;
+        font-weight: 400;
+        max-width: 640px;
+    }
+
+    .header-main > .form-section {
+        max-width: 400px;
+    }
+
+    .header-main > .form-section > .form-title > h3 {
+        font-size: 1.5rem;
+        max-width: 450px;
+    }
+
+    .header-main > .form-section > .form-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-input > .email-space > form > input {
+        height: 3.5rem;
+        min-width: 500px;
+    }
+
+    .button-subscribe {
+        margin-top: 1rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        min-width: 130px;
+        border-radius: 3px;
+    }
+
+    /* Card Section */
+
+    .card-1 {
+        flex-direction: column;
+        margin: 4rem auto;
+        max-width: 100%;
+    }
+
+    .card-left {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    #wrapper-first > h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        margin-bottom: .5rem;
+    }
+
+    #wrapper-first > h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+
+    #wrapper-second > h1 {
+        font-size: 2.5rem;
+        margin: 3rem 0 0;
+    }
+
+    #wrapper-second > h2 {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    .card-right {
+        width: 100%;
+    }
+
+    .card-right-2 {
+        width: 100%;
+        order: 2;
+    }
+
+    .card-left-4 {
+        display: flex;
+        width: 90%;
+        order: 1;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .card-right-4 {
+        display: flex;
+        flex: 0 1 auto;
+        width: 60%;
+        order: 2;
+    }
+
+    .story-footer {
+        width: 400px;
+        height: 90px;
+        z-index: 1111;
+        bottom: 30px;
+        left: 115px;
+    }
+
+    .img-story-footer > img {
+        width: 56px;
+        height: 70px;
+    }
+
+    .text-story-footer > .title-story-box {
+        font-size: 14px;
+    }
+
+    .story-card-animation {
+        margin: 0 auto;
+    }
+
+    .story-card-animation2 {
+        margin: 0 auto;
+    }
+
+    /* FAQ Section */
+
+    .wrapper-form-faq > .form-section > .form-input {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper-faq {
+        margin: 0 auto;
+        max-width: 100%;
+    }
     
+    .container-faq > .wrapper-faq > h1 {
+        font-size: 2.8rem;
+        text-align: center;
+        color: var(--secondary);
+        margin-top: 5rem;
+        line-height: 1.2;
+    }
+    
+    .wrapper-list-faq {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .faq-button {
+        padding: 1.1rem;
+        font-size: 1.2rem;
+    }
+
+    .wrapper-form-faq > .form-section > .form-title > h3 {
+        font-size: 1.4rem;
+        width: 70%;
+        line-height: 1.5;
+        margin: 0 auto;
+    }
+
+    .wrapper-form-faq > .form-section > .form-input > .email-space > form > input {
+        min-width: 430px;
+    }
+
+
+}
+
+
+/* Media Query Smartphone  */
+
+/* Nav - Header */
+
+@media screen and (max-width: 550px) {
 
     .nav-background {
         padding-bottom: 0px;
@@ -593,7 +821,11 @@ footer > .wrapper-footer > .footer-grid > * > ul > li > a:hover {
         justify-content: flex-end;
         align-items: center;
         flex: 0 1 50%;
-        margin-right: 3rem;
+        margin-right: 1.5rem;
+    }
+
+    .nav-section > .nav-right > .language {
+        margin-right: 1rem;
     }
 
     .header-main {
@@ -642,7 +874,7 @@ footer > .wrapper-footer > .footer-grid > * > ul > li > a:hover {
         border-radius: 3px;
     }
 
-    /* Card Media Query */
+    /* Card Section */
     
     .card-1 {
         flex-direction: column;
@@ -682,6 +914,11 @@ footer > .wrapper-footer > .footer-grid > * > ul > li > a:hover {
 
     .card-right {
         width: 100%;      
+    }
+
+    .card-right-2 {
+        width: 100%;
+        order: 2;
     }
 
     .card-left-4 {
